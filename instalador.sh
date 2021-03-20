@@ -269,9 +269,9 @@ main
 echo "¿Quieres instalar BadVpn?"
 select yn in "Si" "No"; do
     case $yn in
-        Si ) wget https://raw.githubusercontent.com/rockz5555/badvpn-installer/master/badvpn-installer.sh; break;;
+        Si ) wget https://raw.githubusercontent.com/rockz5555/badvpn-installer/master/badvpn-installer.sh && bash badvpn-installer.sh; break;;
         No ) exit;;
     esac
 done
 
-bash badvpn-installer.sh
+echo -e "por favor ingrese 'v2ray' para ingresar al panel v2ray\n"
