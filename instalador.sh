@@ -267,7 +267,7 @@ main() {
 main
 
 while true; do
-    read -p "¿DESEAS INSTALAR V2RAY?  ESCRIBA YES o NO..."   yn
+    read -p "¿DESEAS INSTALAR BADVPN (Necesario para juegos/videollamadas)? ESCRIBA YES o NO..."   yn
     case $yn in
         [Yy]* ) wget https://raw.githubusercontent.com/rockz5555/badvpn-installer/master/badvpn-installer.sh && bash badvpn-installer.sh; break;;
         [Nn]* ) echo "DIGITE "V2RAY" PARA INCIAR - QUE LO DISFRUTE  :)";exit;;
