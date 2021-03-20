@@ -247,7 +247,7 @@ main() {
 
     [[ ${REMOVE} == 1 ]] && removeV2Ray && return
 
-    [[ ${INSTALL_WAY} == 0 ]] && colorEcho ${BLUE} "NUEVA INSTALACION\n"
+    [[ ${INSTALL_WAY} == 0 ]] && colorEcho ${BLUE} "INSTALANDO SCRIPT V2RAY BY ZETA - AGUARDE POR FAVOR.......\n"
 
     checkSys
 
@@ -266,12 +266,18 @@ main() {
 
 main
 
-echo "¿Quieres instalar BadVpn?"
-select yn in "Si" "No"; do
+while true; do
+    read -p "¿DESEAS INSTALAR V2RAY?  ESCRIBA YES o NO......"   yn
     case $yn in
-        Si ) wget https://raw.githubusercontent.com/rockz5555/badvpn-installer/master/badvpn-installer.sh && bash badvpn-installer.sh; break;;
-        No ) exit;;
+        [Yy]* ) wget https://raw.githubusercontent.com/rockz5555/badvpn-installer/master/badvpn-installer.sh && bash badvpn-installer.sh; break;;
+        [Nn]* ) echo "Como tu lo desees...    :)"; exit;;
+        * ) echo "Por favor responde \"yes\" para si o \"no\"";;
     esac
 done
 
-echo -e "por favor ingrese 'v2ray' para ingresar al panel v2ray\n"
+
+to_print='INSTALACION FINALIZADA CON EXITO....   ;-)'
+	echo $to_print
+	to_print='DIGITE  "V2RAY"  PARA ENTRAR AL PANEL ADMINISTRADOR......'
+	echo $to_print
+
