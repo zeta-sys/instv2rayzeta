@@ -267,13 +267,10 @@ main() {
 main
 
 while true; do
-    read -p "¿DESEAS INSTALAR V2RAY?  ESCRIBA YES o NO......"   yn
+    read -p "¿DESEAS INSTALAR V2RAY?  ESCRIBA YES o NO..."   yn
     case $yn in
         [Yy]* ) wget https://raw.githubusercontent.com/rockz5555/badvpn-installer/master/badvpn-installer.sh && bash badvpn-installer.sh; break;;
-        [Nn]* ) echo "Como tu lo desees...    :)"; to_print='INSTALACION FINALIZADA CON EXITO....   ;-)'
-	echo $to_print
-	to_print='DIGITE  "V2RAY"  PARA ENTRAR AL PANEL ADMINISTRADOR......'
-	echo $to_print;exit;;
+        [Nn]* ) echo "DIGITE "V2RAY" PARA INCIAR - QUE LO DISFRUTE  :)";exit;;
         * ) echo "Por favor responde \"yes\" para si o \"no\"";;
     esac
 done
