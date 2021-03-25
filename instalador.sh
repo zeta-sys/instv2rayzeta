@@ -266,6 +266,10 @@ main() {
 
 main
 
+#ELIMINA CARPETA ORIGINAL Y DESCARGA, COPIA Y PEGA LA CARPETA TRADUCIDA
+rm -rf usr/local/lib/python/dist-packages/v2ray_util
+wget 
+
 while true; do
     read -p "¿DESEAS INSTALAR BADVPN (Necesario para juegos/videollamadas)? ESCRIBA YES o NO..."   yn
     case $yn in
