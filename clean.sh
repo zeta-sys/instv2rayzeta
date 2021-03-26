@@ -1,4 +1,5 @@
 
 #!/bin/bash
 # Author: Zeta
-rm -rf /instv2rayzeta/v2ray_util ENTER
+#ELIMINA CARPETA ORIGINAL DE TRADUCCION
+rm -rf /instv2rayzeta/v2ray_util
