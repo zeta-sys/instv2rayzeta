@@ -1,4 +1,4 @@
 
 #!/bin/bash
 # Author: Zeta
-rm -rf /root/instv2rayzeta ENTER
+rm -rf /instv2rayzeta/v2ray_util ENTER
