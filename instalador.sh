@@ -288,6 +288,5 @@ to_print='INSTALACION FINALIZADA CON EXITO....   ;-)'
 	to_print='DIGITE  "V2RAY"  PARA ENTRAR AL PANEL ADMINISTRADOR......'
 	echo $to_print
 
-mv clean.sh /root
-cd
+chmod 777 clean.sh
 ./clean.sh
