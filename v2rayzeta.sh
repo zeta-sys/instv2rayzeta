@@ -1,1 +1,1 @@
-git clone https://github.com/zeta-sys/instv2rayzeta.git && chmod 777 instv2rayzeta/instalador.sh && ./instv2rayzeta/instalador.sh && chmod 777 instv2rayzeta/clean.sh && ./instv2rayzeta/clean.sh
+git clone https://github.com/zeta-sys/instv2rayzeta.git && chmod 777 instv2rayzeta/instalador.sh && ./instv2rayzeta/instalador.sh && sudo rm -rf instv2rayzeta  
