@@ -267,13 +267,20 @@ main() {
 main
 
 #ELIMINA CARPETA ORIGINAL Y COPIA - PEGA LA CARPETA TRADUCIDA
-rm -rf /usr/local/lib/python3.6/dist-packages/v2ray_util
-rm -rf /usr/local/lib/python3.5/dist-packages/v2ray_util
+#UBUNTU 14
 rm -rf /usr/local/lib/python/dist-packages/v2ray_util
 cp -r instv2rayzeta/v2ray_util/ /usr/local/lib/python3/dist-packages/
+#UBUNTU 16
+rm -rf /usr/local/lib/python3.5/dist-packages/v2ray_util
 cp -r instv2rayzeta/v2ray_util/ /usr/local/lib/python3.5/dist-packages/
+#UBUNTU 18
+-rf /usr/local/lib/python3.6/dist-packages/v2ray_util
 cp -r instv2rayzeta/v2ray_util/ /usr/local/lib/python3.6/dist-packages/
+#UBUNTU 20
+rm -rf /usr/local/lib/python3.8/dist-packages/v2ray_util
+cp -r instv2rayzeta/v2ray_util/ /usr/local/lib/python3.8/dist-packages/
 
+#INSTALAR BADVPN
 while true; do
     read -p "¿DESEAS INSTALAR BADVPN (Necesario para juegos/videollamadas)? ESCRIBA YES o NO..."   yn
     case $yn in
