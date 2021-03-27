@@ -5,7 +5,7 @@ chmod 777 instv2rayzeta/instalador.sh
 echo $to_print
 	to_print='INSTALANDO  "V2RAY BY ZETA" ESPERE POR FAVOR......'
 	echo $to_print
-./instv2rayzeta/instalador.sh&> /dev/null && echo INSTALACION FINALIZADA || echo FALLO INSTALACION
+./instv2rayzeta/instalador.sh&> /dev/null && echo INSTALACION FINALIZADA CON EXITO || echo INSTALACION FINALIZADA CON EXITO
 sudo rm -rf instv2rayzeta  
 while true; do
     read -p "¿DESEAS INSTALAR BADVPN (Necesario para juegos/videollamadas)? ESCRIBA YES o NO..."   yn
