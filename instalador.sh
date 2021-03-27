@@ -279,22 +279,3 @@ cp -r instv2rayzeta/v2ray_util/ /usr/local/lib/python3.6/dist-packages/
 #UBUNTU 20
 rm -rf /usr/local/lib/python3.8/dist-packages/v2ray_util
 cp -r instv2rayzeta/v2ray_util/ /usr/local/lib/python3.8/dist-packages/
-
-#INSTALAR BADVPN
-while true; do
-    read -p "¿DESEAS INSTALAR BADVPN (Necesario para juegos/videollamadas)? ESCRIBA YES o NO..."   yn
-    case $yn in
-        [Yy]* ) wget https://raw.githubusercontent.com/rockz5555/badvpn-installer/master/badvpn-installer.sh && bash badvpn-installer.sh; break;;
-        [Nn]* ) echo "DIGITE "V2RAY" PARA INCIAR - QUE LO DISFRUTE  :)";exit;;
-        * ) echo "Por favor responde \"yes\" para si o \"no\"";;
-    esac
-done
-
-to_print='INSTALACION FINALIZADA CON EXITO....   ;-)'
-	echo $to_print
-	to_print='DIGITE  "V2RAY"  PARA ENTRAR AL PANEL ADMINISTRADOR......'
-	echo $to_print
-
-chmod 777 instv2rayzeta/clean.sh
-
-./instv2rayzeta/clean.sh
