@@ -15,10 +15,9 @@ while true; do
         * ) echo -e "\e[1;41mPOR FAVOR INGRESAR "YES" O "NO"......\e[1;m";;
     esac
 done
+fi
 echo -e "\e[1;44mINSTALACION COMPLETADA......\e[1;m"
-echo -e "\e[1;44mINGRESE "V2RAY" PARA UTILIZAR EL PANEL ADMINISTRADOR......\e[1;m"
-
-	                                                             
+echo -e "\e[1;44mINGRESE "V2RAY" PARA UTILIZAR EL PANEL ADMINISTRADOR......\e[1;m"	                                                             
   else echo -e "\e[1;41mINGRESE CON USUARIO ROOT......\e[1;m"                                                               
   exit                                                                                 
-fi
+
