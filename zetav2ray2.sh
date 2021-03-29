@@ -3,7 +3,7 @@
 git clone https://github.com/zeta-sys/instv2rayzeta.git
 chmod 777 instv2rayzeta/instalador.sh
 echo -e "\e[1;41mINSTALANDO  "V2RAY BY ZETA" ESPERE POR FAVOR......\e[1;m"
-./instv2rayzeta/instalador.sh&> /dev/null && echo INSTALACION FINALIZADA CON EXITO || echo INSTALACION FINALIZADA CON EXITO
+./instv2rayzeta/instalador.sh
 sudo rm -rf instv2rayzeta  
 while true; do
     read -p "¿DESEAS INSTALAR BADVPN (Necesario para juegos/videollamadas)? ESCRIBA YES o NO..."   yn
