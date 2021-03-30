@@ -23,7 +23,6 @@ fi
 if [ "$EUID" = 0 ]                                                                   
   then sleep 2; clear
 echo -e "\e[1;44mINSTALACION COMPLETADA......\e[1;m"
-sleep 1,
 echo -e "\e[1;44mINGRESE "V2RAY" PARA UTILIZAR EL PANEL ADMINISTRADOR......\e[1;m"
   else
     exit
