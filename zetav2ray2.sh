@@ -12,7 +12,7 @@ while true; do
     read -p "¿DESEAS INSTALAR BADVPN (Necesario para juegos/videollamadas)? ESCRIBA YES o NO..."   yn
     case $yn in
         [Yy]* ) wget https://raw.githubusercontent.com/rockz5555/badvpn-installer/master/badvpn-installer.sh && ./badvpn-installer.sh&> /dev/null; break;;
-        [Nn]* ) echo -e "\e[1;41mELIGIO NO INSTALAR BADVPN, SI DESEA INSTALAR, REINSTALE SCRIPT......\e[1;m";exit;;
+        [Nn]* ) echo -e "\e[1;41mELIGIO NO INSTALAR BADVPN, SI DESEA INSTALAR, REINSTALE SCRIPT......\e[1;m" && echo -e "\e[1;44mINSTALACION COMPLETADA......\e[1;m" && echo -e "\e[1;44mINGRESE "V2RAY" PARA UTILIZAR EL PANEL ADMINISTRADOR......\e[1;m";exit;;
         * ) echo -e "\e[1;41mPOR FAVOR INGRESAR "YES" O "NO"......\e[1;m";;
     esac
 done
