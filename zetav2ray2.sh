@@ -2,8 +2,8 @@
 # Author: Zeta
 echo -e "\e[1;44mPARA INSTALAR DEBE SER USUARIO ROOT - VERIFICANDO......\e[1;m"                                                                            
 if [ "$EUID" = 0 ]                                                                   
-  then git clone https://github.com/zeta-sys/instv2rayzeta.git&> /dev/null
-  chmod 777 instv2rayzeta/instalador.sh&> /dev/null
+  then git clone https://github.com/zeta-sys/instv2rayzeta.git
+  chmod 777 instv2rayzeta/instalador.sh
 clear
 echo -e "\e[1;41mUSUSRIO ROOT DETECTADO - INSTALANDO PANEL "V2RAY BY ZETA" ESPERE POR FAVOR......\e[1;m"
 ./instv2rayzeta/instalador.sh&> /dev/null && echo -e "\e[1;44mPANEL INSTALADO CON EXITO......\e[1;m"
