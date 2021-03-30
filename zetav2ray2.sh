@@ -16,8 +16,8 @@ while true; do
         * ) echo -e "\e[1;41mPOR FAVOR INGRESAR "YES" O "NO"......\e[1;m";;
     esac
 done
-sleep 3; clear
-  else echo -e "\e[1;41mINGRESE CON USUARIO ROOT......\e[1;m"                                                               
+  else sleep 3; clear
+echo -e "\e[1;41mINGRESE CON USUARIO ROOT......\e[1;m"                                                               
 exit                                                                                 
 fi
 if [ "$EUID" = 0 ]                                                                   
