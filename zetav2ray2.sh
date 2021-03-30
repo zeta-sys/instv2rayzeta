@@ -21,7 +21,7 @@ echo -e "\e[1;41mINGRESE CON USUARIO ROOT......\e[1;m"
 exit                                                                                 
 fi
 if [ "$EUID" = 0 ]                                                                   
-  then sleep 2; clear
+  then sleep 3; clear
 echo -e "\e[1;44mINSTALACION COMPLETADA......\e[1;m"
 echo -e "\e[1;44mINGRESE "V2RAY" PARA UTILIZAR EL PANEL ADMINISTRADOR......\e[1;m"
   else
