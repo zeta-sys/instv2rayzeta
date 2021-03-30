@@ -1,7 +1,7 @@
 #!/bin/bash
 # Author: Zeta
 echo -e "\e[1;44mPARA INSTALAR DEBE SER USUARIO ROOT - VERIFICANDO......\e[1;m"    
-sleep 3                                                                        
+sleep 3; clear                                                                        
 if [ "$EUID" = 0 ]                                                                   
   then git clone https://github.com/zeta-sys/instv2rayzeta.git
   chmod 777 instv2rayzeta/instalador.sh
@@ -16,6 +16,7 @@ while true; do
         * ) echo -e "\e[1;41mPOR FAVOR INGRESAR "YES" O "NO"......\e[1;m";;
     esac
 done
+sleep 3; clear
   else echo -e "\e[1;41mINGRESE CON USUARIO ROOT......\e[1;m"                                                               
 exit                                                                                 
 fi
