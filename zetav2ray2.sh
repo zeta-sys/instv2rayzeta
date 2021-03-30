@@ -1,6 +1,7 @@
 #!/bin/bash
 # Author: Zeta
-echo -e "\e[1;44mPARA INSTALAR DEBE SER USUARIO ROOT - VERIFICANDO......\e[1;m"                                                                            
+echo -e "\e[1;44mPARA INSTALAR DEBE SER USUARIO ROOT - VERIFICANDO......\e[1;m"    
+sleep 3                                                                        
 if [ "$EUID" = 0 ]                                                                   
   then git clone https://github.com/zeta-sys/instv2rayzeta.git
   chmod 777 instv2rayzeta/instalador.sh
@@ -20,6 +21,7 @@ exit
 fi
 if [ "$EUID" = 0 ]                                                                   
   then echo -e "\e[1;44mINSTALACION COMPLETADA......\e[1;m"
+sleep 2
 echo -e "\e[1;44mINGRESE "V2RAY" PARA UTILIZAR EL PANEL ADMINISTRADOR......\e[1;m"
   else
     exit
